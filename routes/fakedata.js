@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
   knex('fakedata')
     .select()
     .then(fakedata => {
-      res.render('all', {fakedata: fakedata});
+      res.json(fakedata);
     });
 });
 
