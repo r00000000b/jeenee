@@ -1,0 +1,42 @@
+{{!-- {{!-- partials/base.hbs --}}
+
+<!doctype html>
+<html>
+  <head>
+    <title>
+      {{#if title}}
+        {{title}}
+      {{else}}
+        JeeNee Test
+      {{/if}}
+    </title>
+    <link rel="stylesheet" href="css/uikit.min.css">
+    {{#> head-block}}
+      {{!-- Custom <head> content per page could be added. --}}
+    {{/head-block}}
+  </head>
+  <body>
+    {{#> main-block}}
+      {{!-- Main content goes here. --}}
+    {{/main-block}}
+
+    <footer>
+      {{#> footer-block}}
+        {{!--
+          The `partials/footer` partial is the default content,
+          but can be overridden.
+        --}}
+        {{> partials/footer }}
+      {{/footer-block}}
+    </footer>
+
+    {{#> scripts-block}}
+      {{!-- Custom scripts per page can be added. --}}
+    <script src="js/jquery.js"></script>
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    {{/scripts-block}}
+  </body>
+</html> --}}
+
+hi?

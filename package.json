@@ -17,6 +17,7 @@
     "morgan": "~1.7.0",
     "path": "^0.12.7",
     "pg": "^6.1.4",
-    "serve-favicon": "~2.3.2"
+    "serve-favicon": "~2.3.2",
+    "uikit": "^3.0.0-beta.18"
   }
 }

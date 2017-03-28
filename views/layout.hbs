@@ -1,10 +1,40 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
-    <title>{{title}}</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title>
+      {{#if title}}
+        {{title}}
+      {{else}}
+        JeeNee Test
+      {{/if}}
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.18/css/uikit.min.css" />
+    {{#> head}}
+      {{!-- Custom <head> content per page could be added. --}}
+    {{/head}}
   </head>
   <body>
+    {{#> header}}
+      {{!-- Main content goes here. --}}
+    {{/header}}
+
     {{{body}}}
+
+    <footer>
+      {{#> footer}}
+
+          The `partials/footer` partial is the default content,
+          but can be overridden.
+
+        {{!-- {{> partials/footer }} --}}
+      {{/footer}}
+    </footer>
+
+    {{#> scripts-block}}
+      {{!-- Custom scripts per page can be added. --}}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.18/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.18/js/uikit-icons.min.js"></script>
+    {{/scripts-block}}
   </body>
 </html>
